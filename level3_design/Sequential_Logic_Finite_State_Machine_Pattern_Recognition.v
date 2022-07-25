@@ -8,7 +8,7 @@ module pattern_recognition(
 
 reg [2:0] current_state, next_state;
 
-// Doesn't really matter with the bits
+
 parameter [2:0] S0      = 3'b000;
 parameter [2:0] S10     = 3'b001;
 parameter [2:0] S110    = 3'b010;
