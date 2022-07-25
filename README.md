@@ -83,6 +83,8 @@ Expected Output : next_state = SEQ_10 ;
 
 Observer Output : IDLE ;
 
+Output mismatches for the above inputs proving that there is a design bug.
+
 
 # *DESIGN BUG*
 
