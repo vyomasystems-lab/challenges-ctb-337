@@ -141,23 +141,23 @@ Output mismatches for the above inputs proving that there is a design bug.
 
 Based on above test input and analysis the design, we see the following:
 
-1)  S0110: begin
+      S0110: begin
             if (in) next_state <= S00110;   -----------------------> BUG 1
             
             else   
             
             next_state <= S0;
-       
-       In this block, the inut signal is given 1 instead of 0 and hence hte output is not as per we required as the sequence is not detected.
+            
+           
+   In this block, the inut signal is given 1 instead of 0 and hence hte output is not as per we required as the sequence is not detected.
         
-     Therefore the correct block is: 
-         
+   Therefore the correct block is: 
+       
          S0110: begin
             
             if (!in) next_state <= S00110;
             
             else    next_state <= S0;
+             end
         
-        end
-        
-        Now, the output comes as required.
+   Now, the output comes as required.
