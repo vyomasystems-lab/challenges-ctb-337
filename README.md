@@ -1,13 +1,11 @@
 # challenges-ctb-337
 challenges-ctb-337 created by GitHub Classroom
 
-
-# challenges-ctb-337
-challenges-ctb-337 created by GitHub Classroom
-
 Verification Environment:
-
 The cocoTb based python test is developed and tests for verification of bug and making the code bug free. 
+
+
+
 
 LEVEL_1_DESIGN_1
 The designn 1 consists of Mux with 31 inputs and 5 select bits and 2 output bits to choose and represent the output respectively.
@@ -30,8 +28,8 @@ Expected output : out = inp12
 Observed Output:  out = 0;
 Output mismatches for the above inputs proving that there is a design bug.
 
-DESIGN BUG
 
+DESIGN BUG
 Based on above test input and analysis the design, we see the following:
 
 1)  5'b11101: out = inp29;
@@ -52,6 +50,9 @@ Based on above test input and analysis the design, we see the following:
  he binary value of 12 is incorrect and same as that of binary value of 13. Whereas the value of 12 must be 5'b01100.
  
  
+
+
+
 LEVEL_1_DESIGN_2
 The designn 2 consists of a sequence detector 1011 with inputs as inp_bit,reset,clk and the output as seq_seen with overlap.
 
@@ -69,7 +70,6 @@ Observer Outut : IDLE ;
 
 
 DESIGN BUG
-
 Based on above test input and analysis the design, we see the following:
 
 1) assign seq_seen = current_state == SEQ_1011 ? 1 : 0;  -------> BUG 1
