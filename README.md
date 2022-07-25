@@ -116,16 +116,3 @@ Based on above test input and analysis the design, we see the following:
             else    next_state <= S0;
         end
         Now, the output comes as required.
-
-
-
-
-
-
-
-
-
-S0110: begin
-            if (in) next_state <= S00110;
-            else    next_state <= S0;
-        end
