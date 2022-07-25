@@ -42,7 +42,7 @@ always @ (current_state or in) begin
             else    next_state <= S0;
         end
         S0110: begin
-            if (!in) next_state <= S00110;
+            if (in) next_state <= S00110;
             else    next_state <= S0;
         end
         S00110:begin
