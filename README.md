@@ -11,7 +11,9 @@ The design 1 consists of Mux with 31 inputs and 5 select bits and 2 output bits 
 # *Test Scenario 1:*
 Test inputs: 5'b11110
 Expected output : out = inp30;
+
 Observed Output:  out = 0;
+
 Output mismatches for the above inputs proving that there is a design bug.
 
 # *Test Scenario 2:*
