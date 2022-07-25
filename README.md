@@ -68,7 +68,7 @@ The designn 2 consists of a sequence detector 1011 with inputs as inp_bit,reset,
 
 
 # *Test Scenario 1:*
-Test Inputs: assign seq_seen = current_state == SEQ_1011 ? 1 : 0;
+Test Inputs     : assign seq_seen = current_state == SEQ_1011 ? 1 : 0;
 
 Expected Output : out = 1 if sequence comes out to be same and 0 if not
 
@@ -81,7 +81,7 @@ Test inputs : after SEQ_1011: (inp_bit == 1);
 
 Expected Output : next_state = SEQ_10 ;
 
-Observer Outut : IDLE ;
+Observer Output : IDLE ;
 
 
 # *DESIGN BUG*
@@ -96,13 +96,13 @@ And hence, the statement should be:
 assign seq_seen = (current_state == SEQ_1011) ? 1 : 0; 
 
 
-2)  SEQ_1011:                                             --------> BUG 2
-      
-      begin
-      
-        next_state = IDLE;
+2)  SEQ_1011:                   --------> BUG 2
+                                        
+             begin
+
+                         next_state = IDLE;
         
-      end
+              end
 
 
 
