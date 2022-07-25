@@ -92,3 +92,40 @@ The code must add an if else consition so that it works as an overlapping sequen
         next_state = IDLE;
       end
 
+## *LEVEL 3*
+The design 3 consists of a sequential logic finite state machine pattern recognition
+ 
+ # *Test Scenario 1:*
+Test Inputs: S00110 must get detected
+Expected Output : The input sequence must be identified.
+Observed Output:  The input sequential series required is not detected.
+Output mismatches for the above inputs proving that there is a design bug.
+
+# *DESIGN BUG*
+
+Based on above test input and analysis the design, we see the following:
+
+1)  S0110: begin
+            if (in) next_state <= S00110;   -----------------------> BUG 1
+            else    next_state <= S0;
+        In this block, the inut signal is given 1 instead of 0 and hence hte output is not as per we required as the sequence is not detected.
+        
+     Therefore the correct block is: 
+         S0110: begin
+            if (!in) next_state <= S00110;
+            else    next_state <= S0;
+        end
+        Now, the output comes as required.
+
+
+
+
+
+
+
+
+
+S0110: begin
+            if (in) next_state <= S00110;
+            else    next_state <= S0;
+        end
