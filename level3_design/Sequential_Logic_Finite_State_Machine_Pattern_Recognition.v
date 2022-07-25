@@ -8,10 +8,11 @@ module pattern_recognition(
 
 reg [2:0] current_state, next_state;
 
+// Doesn't really matter with the bits
 parameter [2:0] S0      = 3'b000;
-parameter [2:0] S00     = 3'b001;
-parameter [2:0] S001    = 3'b010;
-parameter [2:0] S0011   = 3'b011;
+parameter [2:0] S10     = 3'b001;
+parameter [2:0] S110    = 3'b010;
+parameter [2:0] S0110   = 3'b011;
 parameter [2:0] S00110  = 3'b100;
 
 assign found = (current_state == S00110) ? 1 : 0;
@@ -29,23 +30,23 @@ end
 always @ (current_state or in) begin
     case (current_state)
         S0: begin
-            if (!in) next_state <= S00;
+            if (in) next_state <= S10;
             else    next_state <= S0;
         end
-        S00: begin
-            if (in) next_state <= S001;
+        S10: begin
+            if (in) next_state <= S110;
             else    next_state <= S0;
         end
-        S001: begin
-            if (in) next_state <= S0011;
+        S110: begin
+            if (!in) next_state <= S0110;
             else    next_state <= S0;
         end
-        S0011: begin
+        S0110: begin
             if (!in) next_state <= S00110;
             else    next_state <= S0;
         end
         S00110:begin
-            if (!in) next_state <= S00;
+            if (in) next_state <= S10;
             else    next_state <= S0;
         end
     endcase
