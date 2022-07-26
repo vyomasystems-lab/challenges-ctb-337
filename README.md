@@ -125,10 +125,10 @@ The code must add an if else consition so that it works as an overlapping sequen
       end
 
 ## *LEVEL 3*
-The design 3 consists of a sequential logic finite state machine pattern recognition
+The design 3 consists of a sequential logic finite state machine pattern recognition.
  
  # *Test Scenario 1:*
-Test Inputs: S00110 must get detected
+Test Inputs: 1101 must get detected
 
 Expected Output : The input sequence must be identified.
 
