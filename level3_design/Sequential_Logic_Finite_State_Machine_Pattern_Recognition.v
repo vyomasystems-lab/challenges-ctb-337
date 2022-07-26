@@ -49,7 +49,7 @@ reg [2:0] next_state;
               else
                 next_state<=S0;
          S4: if(din==1)
-                next_state<=S2;
+                next_state<=S1;
              else
                 next_state<=S0;
         default:
