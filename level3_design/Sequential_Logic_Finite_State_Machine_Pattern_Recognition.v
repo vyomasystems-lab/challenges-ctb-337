@@ -1,7 +1,9 @@
+//Sequential logic state machine pattern recognition
+
 `timescale 1ns /1ps
 
 
-module FSM_Moore_1101(
+module FSM_1101(
 input clk,
 input reset,
 input din,
