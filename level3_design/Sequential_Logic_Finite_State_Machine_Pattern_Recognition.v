@@ -1,4 +1,5 @@
 //Sequential logic state machine pattern recognition
+//Recognition pattern_1101
 
 `timescale 1ns /1ps
 
