@@ -1,6 +1,10 @@
 # challenges-ctb-337
 challenges-ctb-337 created by GitHub Classroom
 
+
+![Screenshot (2302)](https://user-images.githubusercontent.com/109905598/181747265-5f39bcc9-6929-4734-9d53-5a8ff63932f7.png)
+
+
 ### *Verification Environment:*
 The cocoTb based python test is developed and tests for verification of bug and making the code bug free. 
 
