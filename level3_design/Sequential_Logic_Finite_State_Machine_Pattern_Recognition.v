@@ -4,7 +4,7 @@
 `timescale 1ns /1ps
 
 
-module FSM_1101(
+module FSM_Moore_1101(
 input clk,
 input reset,
 input din,
@@ -52,7 +52,7 @@ reg [2:0] next_state;
               else
                 next_state<=S0;
          S4: if(din==1)
-                next_state<=S1;
+                next_state<=S2;
              else
                 next_state<=S0;
         default:
