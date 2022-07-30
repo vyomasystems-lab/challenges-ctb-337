@@ -6,7 +6,7 @@ challenges-ctb-337 created by GitHub Classroom
 
 
 ### *Verification Environment:*
-The cocoTb based python test is developed and tests for verification of bug and making the code bug free. 
+The cocoTb based python test is developed and tests for verification of bug and making the code bug free.The codes are running but there are some cases for which the output is not coming as expected.
 
 
 
